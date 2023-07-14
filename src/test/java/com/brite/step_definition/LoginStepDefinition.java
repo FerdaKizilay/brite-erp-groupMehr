@@ -1,53 +1,51 @@
 package com.brite.step_definition;
 
+import com.brite.pages.DashboardPage;
 import com.brite.pages.LoginPage;
+import com.brite.utilities.BrowserUtils;
 import com.brite.utilities.ConfigurationReader;
 import com.brite.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class LoginStepDefinition {
 
-    LoginPage loginPage=new LoginPage();
+    LoginPage loginPage = new LoginPage();
+    DashboardPage dashboardPage = new DashboardPage();
 
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
-        System.out.println("Login to app in Before method");
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
-    @Given("the user logged in as {string}")
-    public void the_user_logged_in_as(String userType) {
 
-        loginPage.login("posmanager");
-
-//        String userName=null;
-//        String password=null;
-//
-//        if(userType.equalsIgnoreCase("posmanager")){
-//            userName = ConfigurationReader.getProperty("posmanager_username");
-//            password = ConfigurationReader.getProperty("posmanager_password");
-//        }else if(userType.equalsIgnoreCase("crm manager")){
-//            userName = ConfigurationReader.getProperty("crm_manager_username");
-//            password = ConfigurationReader.getProperty("crm_manager_password");
-//        }else if(userType.equalsIgnoreCase("sales manager")){
-//            userName = ConfigurationReader.getProperty("sales_manager_username");
-//            password = ConfigurationReader.getProperty("sales_manager_password");
-//        }else if(userType.equalsIgnoreCase("inventory manager")){
-//            userName = ConfigurationReader.getProperty("inventory_manager_username");
-//            password = ConfigurationReader.getProperty("inventory_manager_password");
-//        }else if(userType.equalsIgnoreCase("expenses manager")){
-//            userName = ConfigurationReader.getProperty("expenses_manager_username");
-//            password = ConfigurationReader.getProperty("expenses_manager_password");
-//        }
-        //send username and password and login
-//        new LoginPage().login(userName,password);
-
-    }
-    @Given("the user logged in with username as {string} and password as {string}")
-    public void the_user_logged_in_with_username_as_and_password_as(String userName, String password) {
-        LoginPage loginPage=new LoginPage();
-        loginPage.login(userName,password);
+    @Given("the user enters valid {string} credentials")
+    public void theUserEntersValidCredentials(String managerType) {
+        loginPage.login(managerType);
     }
 
+    @Then("dashboard should be displayed")
+    public void dashboardShouldBeDisplayed() {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(3));
+        wait.until(ExpectedConditions.urlContains("channel_inbox"));//to be checked with requirements
+       // Assert.assertTrue(Driver.getDriver().getTitle().equals("#Inbox - Odoo"));
+    }
+
+
+    @Then("the user enters valid manager's {string} and {string}")
+    public void theUserEntersValidManagerSAnd(String username, String password) {
+        loginPage.login2(username, password);
+    }
+
+
+    @Given("the user enters valid {string}")
+    public void theUserEntersValid(String accountType) {
+        loginPage.displayAccountType();
+    }
 }
