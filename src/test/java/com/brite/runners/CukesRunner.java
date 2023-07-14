@@ -13,10 +13,10 @@ import org.junit.runner.RunWith;
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
 
-        features = "src/test/resources/features",
-        glue = "com/cydeo/step_definitions",
+        features = "src/test/resources/feature",
+        glue = "com/brite/step_definition",
         dryRun = false,
-        tags = "",
+        tags = "@login",
         publish = true //generating a report with public link
         //, monochrome=true
 
