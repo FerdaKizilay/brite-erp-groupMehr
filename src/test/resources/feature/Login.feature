@@ -1,5 +1,6 @@
 @login
 
+
 Feature:  Brite ERP login feature
 
   User Story:
@@ -35,3 +36,4 @@ Feature:  Brite ERP login feature
       | sales manager     | sales_manager_username     | sales_manager_password     |
       | inventory manager | inventory_manager_username | inventory_manager_password |
       | expenses manager  | expenses_manager_username  | expenses_manager_password  |
+
