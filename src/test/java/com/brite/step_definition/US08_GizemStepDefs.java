@@ -49,7 +49,7 @@ public class US08_GizemStepDefs {
         ((JavascriptExecutor) Driver.getDriver()).executeScript("window.open('/web#menu_id=535&action=723');");
 
 
-        BrowserUtils.switchWindowAndVerify("Repair Orders - Odoo", "Odoo");
+        BrowserUtils.switchWindowAndVerify(Driver.getDriver(), "Repair Orders - Odoo", "Odoo");
 
 
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));

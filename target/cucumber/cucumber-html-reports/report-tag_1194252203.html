@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: Test run failed</title>
+<title>Cucumber Reports  - Tag: @sales-manager</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>19 Jul 2023, 22:09</td>
+      <td>19 Jul 2023, 22:11</td>
     </tr>
   </tbody>
 </table>
@@ -87,7 +87,7 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Feature Report</h2>
+    <h2>Tag Report</h2>
   </div>
 </div>
 
@@ -106,7 +106,7 @@ $(document).ready(function() {
     <th colspan="2">Features</th>
   </tr>
   <tr>
-    <th>Feature</th>
+    <th>Tag</th>
     <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
@@ -126,20 +126,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Test run failed</td>
-          <td      class="passed"    >1</td>
-          <td      class="failed"    >1</td>
+          <td class="tagname">@sales-manager</td>
+          <td      class="passed"    >5</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">2</td>
+          <td >0</td>
+          <td class="total">5</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="0">0.000</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="37434202000">37.434</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -165,38 +165,31 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="feature">
+      <div class="elements">
 
-<div class="tags indention">
-</div>
-
-
-<div class="brief failed">
-  <span class="keyword indention">Feature</span>
-  <span class="name">Test run failed</span>
-
-
-</div>
-
-        <div class="description indention">There were errors during the execution</div>
-
-        <div class="elements inner-level">
 
 <div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_140328193.html">Quotation Management on Sales Page</a>
+    </div>
 
 
 <div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4089072067.html">@senem</a>
+       <a href="report-tag_1194252203.html">@sales-manager</a>
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">37.434</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Failure while executing Cucumber</span>
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User selects all quotations on Sales page</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -205,16 +198,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -224,15 +217,42 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user is on the login page</span>
+
+  <span class="lead-duration duration">14.688</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">Cucumber failed while executing</span>
+  <span class="name">User login using <span class="argument">&quot;salesmanager6@info.com&quot;</span> and <span class="argument">&quot;salesmanager&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">8.580</span>
 
 </div>
 
@@ -255,11 +275,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Cucumber will report this error:</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User is on the Sales page</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.372</span>
 
 </div>
 
@@ -268,79 +288,113 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>io.cucumber.core.runner.DuplicateStepDefinitionException:</a>
+
+
+
+
+
+
+
+
+
+
       </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.brite.step_definition.LoginStepDefinition.user_is_on_the_login_page() and com.brite.step_definition.US07_SalesStepDefinitions.userIsOnTheLoginPage()
-	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:278)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:272)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:72)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
-	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
-	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
-	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-</pre>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User clicks on the top checkbox</span>
+
+  <span class="lead-duration duration">6.740</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">All quotations should be selected</span>
+
+  <span class="lead-duration duration">0.051</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-3" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.brite.step_definition.Hooks.tearDownMethod(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.116</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-      </div>
   </div>
 </div>
 
-
-
-
-
-  </div>
-</div>
-
-        </div>
 
       </div>
     </div>
