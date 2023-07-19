@@ -18,6 +18,7 @@ public class US07_SalesStepDefinitions {
    public void userIsOnTheLoginPage() {Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 }*/
 
+
     @When("user enters POS manager credentials and login")
     public void userEntersPOSManagerCredentialsAndLogin() {
 
