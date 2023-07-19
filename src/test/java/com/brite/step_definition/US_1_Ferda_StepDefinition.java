@@ -19,7 +19,7 @@ public class US_1_Ferda_StepDefinition {
     @Then("user clicks customer button")
     public void user_clicks_customer_button() {
        ferdaPage.customerButton.click();
-       BrowserUtils.waitFor(2);
+       BrowserUtils.waitFor(3);
     }
     @Then("user clicks create button")
     public void user_clicks_create_button() {
