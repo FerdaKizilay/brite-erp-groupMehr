@@ -38,11 +38,13 @@ import com.brite.utilities.Driver;
 
 
         @FindBy(xpath="//thead[@class='fc-head']")
-        public WebElement daysOfTheMonth;
+        public WebElement daysOfTheWeekInMonth;
 
         @FindBy(xpath = "//tbody[@class='fc-body']")
-        public WebElement datesOfTheMonth;
+        public WebElement datesOfTheMonthTable;
 
+        @FindBy(xpath = "//button[.='Month']")
+        public WebElement monthButton;
 
 
 

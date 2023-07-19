@@ -14,9 +14,9 @@ public class US07_SalesStepDefinitions {
     Sales_Page salesPage=new Sales_Page();
 
 
-    @Given("user is on the login page")
-    public void userIsOnTheLoginPage() {Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-    }
+   /* @Given("user is on the login page")
+   public void userIsOnTheLoginPage() {Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+}*/
 
     @When("user enters POS manager credentials and login")
     public void userEntersPOSManagerCredentialsAndLogin() {

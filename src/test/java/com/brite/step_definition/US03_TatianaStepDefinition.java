@@ -5,6 +5,7 @@ import com.brite.pages.LoginPage;
 import com.brite.utilities.BrowserUtils;
 import com.brite.utilities.ConfigurationReader;
 import com.brite.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -68,7 +69,27 @@ public class US03_TatianaStepDefinition {
     }
 
 
+    @Then("User should be able to see Month module")
+    public void userShouldBeAbleToSeeMonthModule() {
+        BrowserUtils.verifyElementDisplayed(calendarPage.monthButton);
     }
+
+    @When("User clicks on Month module")
+    public void userClicksOnMonthModule() {
+        calendarPage.monthButton.click();
+    }
+
+    @Then("User should be able to see Days of the month")
+    public void userShouldBeAbleToSeeDaysOfTheMonth() {
+        BrowserUtils.verifyElementDisplayed(calendarPage.daysOfTheWeekInMonth);
+
+    }
+
+    @And("User should be able to see Dates of the month in a table")
+    public void userShouldBeAbleToSeeDatesOfTheMonthInATable() {
+        BrowserUtils.verifyElementDisplayed(calendarPage.datesOfTheMonthTable);
+    }
+}
 
 
 
