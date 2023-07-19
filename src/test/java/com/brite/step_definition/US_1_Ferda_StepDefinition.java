@@ -38,9 +38,9 @@ public class US_1_Ferda_StepDefinition {
     }
     @Then("user should see his name")
     public void user_should_see_his_name() {
-       String actualDisplayeName=ferdaPage.displayName.getText();
+       String actualDisplayName=ferdaPage.displayName.getText();
        String expectedDisplayName="Ferda";
-        Assert.assertTrue(actualDisplayeName.equals(expectedDisplayName));
+        Assert.assertTrue(actualDisplayName.equals(expectedDisplayName));
     }
 
 }
