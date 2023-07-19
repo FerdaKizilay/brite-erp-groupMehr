@@ -27,6 +27,7 @@ public class CalendarPage_Tatiana {
     @FindBy(xpath = "//span[normalize-space(text())='Calendar']")
     public WebElement calendarModule;
 
+
     @FindBy(xpath = "//div[@class='fc-row fc-widget-header']")
     public WebElement daysOfTheWeek;
 
