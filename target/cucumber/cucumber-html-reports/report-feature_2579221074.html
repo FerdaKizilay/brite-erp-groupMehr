@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: Brite ERP feature</title>
+<title>Cucumber Reports  - Feature: Brite erp application functionality</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>18 Jul 2023, 12:52</td>
+      <td>18 Jul 2023, 23:46</td>
     </tr>
   </tbody>
 </table>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Brite ERP feature</td>
-          <td      class="passed"    >30</td>
+          <td class="tagname">Brite erp application functionality</td>
+          <td      class="passed"    >40</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">30</td>
+          <td class="total">40</td>
 
           <td  class="passed"    >5</td>
           <td >0</td>
           <td class="total">5</td>
 
-          <td class="duration" data-value="101641046000">1:41.641</td>
+          <td class="duration" data-value="45906731000">45.906</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -168,17 +168,20 @@ $(document).ready(function() {
       <div class="feature">
 
 <div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209202528.html">@US03</a>
 </div>
 
 
 <div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">Brite ERP feature</span>
+  <span class="name">Brite erp application functionality</span>
 
 
 </div>
 
-        <div class="description indention"></div>
+        <div class="description indention">  Agile Story:
+  As a user, I want to see the calendar page as daily, weekly (as a default) and monthly.</div>
 
         <div class="elements inner-level">
 
@@ -189,7 +192,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">18.590</span>
+  <span class="lead-duration duration">6.397</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -232,7 +235,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user is on the login page of the Brite ERP application</span>
 
-  <span class="lead-duration duration">18.590</span>
+  <span class="lead-duration duration">6.397</span>
 
 </div>
 
@@ -268,18 +271,19 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3766474739.html">@US03_Tatiana</a>
+       <a href="report-tag_2209202528.html">@US03</a>
+       <a href="report-tag_2568729422.html">@US03AC2</a>
 </div>
 
 
-  <span class="lead-duration duration">6.946</span>
+  <span class="lead-duration duration">5.169</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Login with valid credential</span>
+  <span class="name">Verify users see the calendar as a weekly</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -311,11 +315,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user is on the login page of the Brite ERP application</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enters <span class="argument">&quot;posmanager75@info.com&quot;</span> and <span class="argument">&quot;posmanager&quot;</span></span>
 
-  <span class="lead-duration duration">0.695</span>
+  <span class="lead-duration duration">0.446</span>
 
 </div>
 
@@ -338,11 +342,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the user login in with <span class="argument">&quot;posmanager75@info.com&quot;</span>,<span class="argument">&quot;posmanager&quot;</span></span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User clicks on login button</span>
 
-  <span class="lead-duration duration">2.904</span>
+  <span class="lead-duration duration">1.631</span>
 
 </div>
 
@@ -367,9 +371,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the user should see account name <span class="argument">&quot;POSManager75&quot;</span></span>
+  <span class="name">User should see <span class="argument">&quot;POSManager75&quot;</span> on the page</span>
 
-  <span class="lead-duration duration">0.576</span>
+  <span class="lead-duration duration">0.380</span>
 
 </div>
 
@@ -394,9 +398,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">the user clicks on calendar module</span>
+  <span class="name">User clicks on calendar module</span>
 
-  <span class="lead-duration duration">0.528</span>
+  <span class="lead-duration duration">0.262</span>
 
 </div>
 
@@ -421,9 +425,63 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the user should sees <span class="argument">&quot;Meetings - Odoo&quot;</span> is in the title</span>
+  <span class="name">User should be able to see Week module</span>
 
-  <span class="lead-duration duration">2.241</span>
+  <span class="lead-duration duration">2.258</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should be able to see Days of the Week</span>
+
+  <span class="lead-duration duration">0.090</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should be able to see time column</span>
+
+  <span class="lead-duration duration">0.099</span>
 
 </div>
 
@@ -468,7 +526,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.brite.step_definition.Hooks.tearDownMethod(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.667</span>
+  <span class="lead-duration duration">0.359</span>
 
           </div>
 
@@ -493,7 +551,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.337</span>
+  <span class="lead-duration duration">4.025</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
@@ -536,7 +594,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user is on the login page of the Brite ERP application</span>
 
-  <span class="lead-duration duration">10.337</span>
+  <span class="lead-duration duration">4.025</span>
 
 </div>
 
@@ -572,18 +630,19 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3766474739.html">@US03_Tatiana</a>
+       <a href="report-tag_2209202528.html">@US03</a>
+       <a href="report-tag_2568729422.html">@US03AC2</a>
 </div>
 
 
-  <span class="lead-duration duration">13.542</span>
+  <span class="lead-duration duration">4.697</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Login with valid credential</span>
+  <span class="name">Verify users see the calendar as a weekly</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -615,11 +674,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user is on the login page of the Brite ERP application</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enters <span class="argument">&quot;eventscrmmanager102@info.com&quot;</span> and <span class="argument">&quot;eventscrmmanager&quot;</span></span>
 
-  <span class="lead-duration duration">0.609</span>
+  <span class="lead-duration duration">0.339</span>
 
 </div>
 
@@ -642,11 +701,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the user login in with <span class="argument">&quot;eventscrmmanager17@info.com&quot;</span>,<span class="argument">&quot;eventscrmmanager&quot;</span></span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User clicks on login button</span>
 
-  <span class="lead-duration duration">9.065</span>
+  <span class="lead-duration duration">1.404</span>
 
 </div>
 
@@ -671,9 +730,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the user should see account name <span class="argument">&quot;EventsCRMManager17&quot;</span></span>
+  <span class="name">User should see <span class="argument">&quot;EventsCRMManager102&quot;</span> on the page</span>
 
-  <span class="lead-duration duration">0.716</span>
+  <span class="lead-duration duration">0.258</span>
 
 </div>
 
@@ -698,9 +757,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">the user clicks on calendar module</span>
+  <span class="name">User clicks on calendar module</span>
 
-  <span class="lead-duration duration">0.190</span>
+  <span class="lead-duration duration">0.290</span>
 
 </div>
 
@@ -725,9 +784,63 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the user should sees <span class="argument">&quot;Meetings - Odoo&quot;</span> is in the title</span>
+  <span class="name">User should be able to see Week module</span>
 
-  <span class="lead-duration duration">2.961</span>
+  <span class="lead-duration duration">2.087</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should be able to see Days of the Week</span>
+
+  <span class="lead-duration duration">0.161</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should be able to see time column</span>
+
+  <span class="lead-duration duration">0.156</span>
 
 </div>
 
@@ -772,7 +885,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.brite.step_definition.Hooks.tearDownMethod(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.547</span>
+  <span class="lead-duration duration">0.250</span>
 
           </div>
 
@@ -797,7 +910,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">8.622</span>
+  <span class="lead-duration duration">3.925</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
@@ -840,7 +953,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user is on the login page of the Brite ERP application</span>
 
-  <span class="lead-duration duration">8.622</span>
+  <span class="lead-duration duration">3.925</span>
 
 </div>
 
@@ -876,18 +989,19 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3766474739.html">@US03_Tatiana</a>
+       <a href="report-tag_2209202528.html">@US03</a>
+       <a href="report-tag_2568729422.html">@US03AC2</a>
 </div>
 
 
-  <span class="lead-duration duration">8.744</span>
+  <span class="lead-duration duration">4.315</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Login with valid credential</span>
+  <span class="name">Verify users see the calendar as a weekly</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -919,11 +1033,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user is on the login page of the Brite ERP application</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enters <span class="argument">&quot;salesmanager69@info.com&quot;</span> and <span class="argument">&quot;salesmanager&quot;</span></span>
 
-  <span class="lead-duration duration">0.781</span>
+  <span class="lead-duration duration">0.296</span>
 
 </div>
 
@@ -946,11 +1060,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the user login in with <span class="argument">&quot;salesmanager93@info.com&quot;</span>,<span class="argument">&quot;salesmanager&quot;</span></span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User clicks on login button</span>
 
-  <span class="lead-duration duration">3.495</span>
+  <span class="lead-duration duration">1.173</span>
 
 </div>
 
@@ -975,9 +1089,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the user should see account name <span class="argument">&quot;SalesManager93&quot;</span></span>
+  <span class="name">User should see <span class="argument">&quot;SalesManager69&quot;</span> on the page</span>
 
-  <span class="lead-duration duration">0.857</span>
+  <span class="lead-duration duration">0.315</span>
 
 </div>
 
@@ -1002,9 +1116,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">the user clicks on calendar module</span>
+  <span class="name">User clicks on calendar module</span>
 
-  <span class="lead-duration duration">0.350</span>
+  <span class="lead-duration duration">0.276</span>
 
 </div>
 
@@ -1029,9 +1143,63 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the user should sees <span class="argument">&quot;Meetings - Odoo&quot;</span> is in the title</span>
+  <span class="name">User should be able to see Week module</span>
 
-  <span class="lead-duration duration">3.258</span>
+  <span class="lead-duration duration">1.968</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should be able to see Days of the Week</span>
+
+  <span class="lead-duration duration">0.151</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should be able to see time column</span>
+
+  <span class="lead-duration duration">0.134</span>
 
 </div>
 
@@ -1076,7 +1244,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.brite.step_definition.Hooks.tearDownMethod(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.593</span>
+  <span class="lead-duration duration">0.268</span>
 
           </div>
 
@@ -1101,7 +1269,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.625</span>
+  <span class="lead-duration duration">4.223</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
@@ -1144,7 +1312,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user is on the login page of the Brite ERP application</span>
 
-  <span class="lead-duration duration">10.625</span>
+  <span class="lead-duration duration">4.223</span>
 
 </div>
 
@@ -1180,18 +1348,19 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3766474739.html">@US03_Tatiana</a>
+       <a href="report-tag_2209202528.html">@US03</a>
+       <a href="report-tag_2568729422.html">@US03AC2</a>
 </div>
 
 
-  <span class="lead-duration duration">8.327</span>
+  <span class="lead-duration duration">4.469</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Login with valid credential</span>
+  <span class="name">Verify users see the calendar as a weekly</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -1223,11 +1392,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user is on the login page of the Brite ERP application</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enters <span class="argument">&quot;imm113@info.com&quot;</span> and <span class="argument">&quot;inventorymanager&quot;</span></span>
 
-  <span class="lead-duration duration">0.638</span>
+  <span class="lead-duration duration">0.303</span>
 
 </div>
 
@@ -1250,11 +1419,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the user login in with <span class="argument">&quot;imm148@info.com&quot;</span>,<span class="argument">&quot;inventorymanager&quot;</span></span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User clicks on login button</span>
 
-  <span class="lead-duration duration">3.621</span>
+  <span class="lead-duration duration">1.213</span>
 
 </div>
 
@@ -1279,9 +1448,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the user should see account name <span class="argument">&quot;InventoryManager148&quot;</span></span>
+  <span class="name">User should see <span class="argument">&quot;InventoryManager113&quot;</span> on the page</span>
 
-  <span class="lead-duration duration">0.523</span>
+  <span class="lead-duration duration">0.327</span>
 
 </div>
 
@@ -1306,9 +1475,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">the user clicks on calendar module</span>
+  <span class="name">User clicks on calendar module</span>
 
-  <span class="lead-duration duration">0.438</span>
+  <span class="lead-duration duration">0.280</span>
 
 </div>
 
@@ -1333,9 +1502,63 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the user should sees <span class="argument">&quot;Meetings - Odoo&quot;</span> is in the title</span>
+  <span class="name">User should be able to see Week module</span>
 
-  <span class="lead-duration duration">3.105</span>
+  <span class="lead-duration duration">2.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should be able to see Days of the Week</span>
+
+  <span class="lead-duration duration">0.256</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should be able to see time column</span>
+
+  <span class="lead-duration duration">0.074</span>
 
 </div>
 
@@ -1380,7 +1603,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.brite.step_definition.Hooks.tearDownMethod(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.672</span>
+  <span class="lead-duration duration">0.299</span>
 
           </div>
 
@@ -1405,7 +1628,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">8.158</span>
+  <span class="lead-duration duration">3.928</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
@@ -1448,7 +1671,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user is on the login page of the Brite ERP application</span>
 
-  <span class="lead-duration duration">8.158</span>
+  <span class="lead-duration duration">3.928</span>
 
 </div>
 
@@ -1484,18 +1707,19 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3766474739.html">@US03_Tatiana</a>
+       <a href="report-tag_2209202528.html">@US03</a>
+       <a href="report-tag_2568729422.html">@US03AC2</a>
 </div>
 
 
-  <span class="lead-duration duration">7.745</span>
+  <span class="lead-duration duration">4.753</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Login with valid credential</span>
+  <span class="name">Verify users see the calendar as a weekly</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -1527,11 +1751,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user is on the login page of the Brite ERP application</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enters <span class="argument">&quot;expensesmanager107@info.com&quot;</span> and <span class="argument">&quot;expensesmanager&quot;</span></span>
 
-  <span class="lead-duration duration">0.520</span>
+  <span class="lead-duration duration">0.410</span>
 
 </div>
 
@@ -1554,11 +1778,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the user login in with <span class="argument">&quot;expensesmanager101@info.com&quot;</span>,<span class="argument">&quot;expensesmanager&quot;</span></span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User clicks on login button</span>
 
-  <span class="lead-duration duration">3.336</span>
+  <span class="lead-duration duration">0.371</span>
 
 </div>
 
@@ -1583,9 +1807,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the user should see account name <span class="argument">&quot;ExpensesManager101&quot;</span></span>
+  <span class="name">User should see <span class="argument">&quot;ExpensesManager107&quot;</span> on the page</span>
 
-  <span class="lead-duration duration">0.938</span>
+  <span class="lead-duration duration">1.598</span>
 
 </div>
 
@@ -1610,9 +1834,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">the user clicks on calendar module</span>
+  <span class="name">User clicks on calendar module</span>
 
-  <span class="lead-duration duration">0.207</span>
+  <span class="lead-duration duration">0.197</span>
 
 </div>
 
@@ -1637,9 +1861,63 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the user should sees <span class="argument">&quot;Meetings - Odoo&quot;</span> is in the title</span>
+  <span class="name">User should be able to see Week module</span>
 
-  <span class="lead-duration duration">2.743</span>
+  <span class="lead-duration duration">1.921</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should be able to see Days of the Week</span>
+
+  <span class="lead-duration duration">0.132</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should be able to see time column</span>
+
+  <span class="lead-duration duration">0.122</span>
 
 </div>
 
@@ -1684,7 +1962,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.brite.step_definition.Hooks.tearDownMethod(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.660</span>
+  <span class="lead-duration duration">0.332</span>
 
           </div>
 
