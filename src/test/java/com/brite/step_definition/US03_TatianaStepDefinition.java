@@ -34,6 +34,7 @@ public class US03_TatianaStepDefinition {
     public void user_should_see_on_the_page(String expectedName) {
         String actualName = calendarPage.accountName.getText();
         Assert.assertEquals(actualName, expectedName);
+
     }
 
     @When("User clicks on calendar module")
