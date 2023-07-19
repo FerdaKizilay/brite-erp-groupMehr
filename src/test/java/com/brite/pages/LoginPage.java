@@ -27,4 +27,13 @@ public class LoginPage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginButton;
 
+    public void login(String username,String password){
+        emailInputBox.sendKeys(username);
+        passWordInputBox.sendKeys(password);
+        loginButton.click();
+
+    }
+
+
+
 }
