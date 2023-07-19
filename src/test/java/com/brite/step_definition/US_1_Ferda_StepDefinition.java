@@ -24,7 +24,7 @@ public class US_1_Ferda_StepDefinition {
     @Then("user clicks create button")
     public void user_clicks_create_button() {
        ferdaPage.createButton.click();
-       BrowserUtils.waitFor(3);
+       BrowserUtils.waitFor(2);
     }
 
     @Then("user writes his name on name box")
