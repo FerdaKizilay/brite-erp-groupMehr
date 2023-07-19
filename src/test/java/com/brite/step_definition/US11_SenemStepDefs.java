@@ -14,6 +14,7 @@ public class US11_SenemStepDefs {
     US11_SenemSalesPage salesPage = new US11_SenemSalesPage();
 
 
+
     @When("User login using {string} and {string}")
     public void user_login_using_and(String email, String password) {
        loginPage.login(email, password);
