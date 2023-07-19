@@ -42,4 +42,14 @@ public class US_1_Ferda_StepDefinition {
         Assert.assertTrue(actualDisplayName.equals(expectedDisplayName));
     }
 
+    @Then("user clicks any customer module")
+    public void user_clicks_any_customer_module() {
+        ferdaPage.customerModule.click();
+    }
+    @Then("user able to click edit button")
+    public void user_able_to_click_edit_button() {
+        ferdaPage.editButton.click();
+    }
+
+
 }
