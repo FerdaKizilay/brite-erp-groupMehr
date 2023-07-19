@@ -23,6 +23,7 @@ public class CalendarPage_Tatiana {
     @FindBy(xpath = "(//td[@class='fc-axis fc-widget-content'])[2]")
     public WebElement timeColumn;
 
+
     @FindBy(xpath = "//span[normalize-space(text())='Calendar']")
     public WebElement calendarModule;
 
