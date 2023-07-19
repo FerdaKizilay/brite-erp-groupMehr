@@ -29,7 +29,7 @@ public class US_1_Ferda_StepDefinition {
     @Then("user writes his name on name box")
     public void user_writes_his_name_on_name_box() {
        ferdaPage.nameInputBox.sendKeys("Ferda");
-       BrowserUtils.waitFor(2);
+       BrowserUtils.waitFor(3);
     }
     @Then("user clicks save button")
     public void user_clicks_save_button() {
