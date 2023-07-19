@@ -19,13 +19,13 @@ public class LoginPage {
     }
 
     @FindBy(xpath = "//input[@type='text']")
-    public WebElement emailInputBox;
+    public static WebElement emailInputBox;
 
     @FindBy(xpath = "//input[@type='password']")
-    public WebElement passWordInputBox;
+    public static WebElement passWordInputBox;
 
     @FindBy(xpath = "//button[@type='submit']")
-    public WebElement loginButton;
+    public static WebElement loginButton;
 
     public void login(String email, String password) {
         emailInputBox.sendKeys(email);
