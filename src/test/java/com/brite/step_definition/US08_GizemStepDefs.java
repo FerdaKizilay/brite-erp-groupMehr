@@ -32,9 +32,8 @@ public class US08_GizemStepDefs {
     @When("I login using {string} and {string}")
     public void i_login_using_and(String email, String password) {
 
-        loginPage.emailInputBox.sendKeys(email);
-        loginPage.passWordInputBox.sendKeys(password);
-        loginPage.loginButton.click();
+       loginPage.login(email, password);
+
     }
     @Then("account holder name should be {string}")
     public void account_holder_name_should_be(String expectedName) {
