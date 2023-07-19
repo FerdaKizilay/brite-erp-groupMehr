@@ -37,4 +37,5 @@ public class US1_Ferda_Page {
     @FindBy(xpath = "//button[@accesskey='a']")
     public WebElement editButton;
 
+
 }
