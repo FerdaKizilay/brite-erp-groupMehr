@@ -19,10 +19,10 @@ import com.brite.utilities.Driver;
         @FindBy(xpath = "//button[.='Day']")
         public WebElement dayButton;
 
-        @FindBy(xpath = "//table//table//th[2]")
+        @FindBy(xpath = "(//table//table//th[2])")
         public WebElement dayHeader;
 
-        @FindBy(xpath = "(//td[@class='fc-axis fc-widget-content'])[2]")
+        @FindBy(xpath = "((//td[@class='fc-axis fc-widget-content'])[2])")
         public WebElement timeColumn;
 
 

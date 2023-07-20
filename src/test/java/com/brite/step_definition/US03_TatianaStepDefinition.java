@@ -10,6 +10,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class US03_TatianaStepDefinition {
     LoginPage loginPage=new LoginPage();
@@ -52,10 +55,12 @@ public class US03_TatianaStepDefinition {
         }
         @Then("User should be able to see Day header")
         public void user_should_be_able_to_see_day_header () {
+            WebDriverWait wait=new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(6));
             BrowserUtils.verifyElementDisplayed(calendarPage.dayHeader);
         }
         @Then("User should be able to see time column")
         public void user_should_be_able_to_see_time_column () {
+            WebDriverWait wait=new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(6));
             BrowserUtils.verifyElementDisplayed(calendarPage.timeColumn);
         }
 
@@ -82,7 +87,9 @@ public class US03_TatianaStepDefinition {
 
     @Then("User should be able to see Days of the month")
     public void userShouldBeAbleToSeeDaysOfTheMonth() {
+        WebDriverWait wait=new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(6));
         BrowserUtils.verifyElementDisplayed(calendarPage.daysOfTheWeekInMonth);
+
 
     }
 
