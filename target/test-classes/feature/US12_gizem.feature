@@ -1,4 +1,4 @@
-@repair
+@gizem
 Feature:  Brite ERP login feature
 
   User Story:
@@ -8,16 +8,10 @@ Feature:  Brite ERP login feature
   Scenario Outline: As a POS & sales manager, I want to access the Repairs page.
 
     Given I am on the login page
-    When I login using with "<email>" and "<password>"
+    When I login using "<email>" and "<password>"
     Then account holder name should be "<name>"
     Then POS & sales, I want to access the Repairs page.
-    Then Verify there are six columns to see the repair orders on the Repairs page when the POS & sales managers login.
-      | Repair Reference Product to Repair Customer Delivery Address Warranty Expiration Status |
-
-
-
-    And Verify POS & sales manager can see the result on the list when searching with Repair Reference data.
-
+    And Users can select all the repair orders by clicking the top checkbox.
 
     @posmanager
     Examples:

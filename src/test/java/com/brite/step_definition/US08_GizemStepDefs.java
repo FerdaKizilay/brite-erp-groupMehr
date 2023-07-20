@@ -24,13 +24,13 @@ public class US08_GizemStepDefs {
     LoginPage loginPage = new LoginPage();
     RepairsPage repairsPage = new RepairsPage();
 
-/*
+
     @Given("I am on the login page")
     public void i_am_on_the_login_page() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
-    @When("I login using {string} and {string}")
+    @When("I login using with {string} and {string}")
     public void i_login_using_and(String email, String password) {
 
         loginPage.emailInputBox.sendKeys(email);
@@ -38,7 +38,7 @@ public class US08_GizemStepDefs {
         loginPage.loginButton.click();
     }
 
- */
+
     @Then("account holder name should be {string}")
     public void account_holder_name_should_be(String expectedName) {
 
