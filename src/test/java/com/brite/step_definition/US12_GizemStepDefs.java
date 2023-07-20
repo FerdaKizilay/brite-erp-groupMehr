@@ -11,7 +11,7 @@ public class US12_GizemStepDefs {
     public void users_can_select_all_the_repair_orders_by_clicking_the_top_checkbox() {
 
         repairsPage.checkBox.click();
-        repairsPage.searchBox.isSelected();
+        repairsPage.checkBox.isSelected();
 
 
     }
