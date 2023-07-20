@@ -14,5 +14,6 @@ public class US12_GizemStepDefs {
         repairsPage.checkBox.isSelected();
 
 
+
     }
 }
