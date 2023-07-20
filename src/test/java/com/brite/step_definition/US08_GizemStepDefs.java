@@ -3,6 +3,7 @@ package com.brite.step_definition;
 import com.brite.pages.LoginPage;
 import com.brite.pages.RepairsPage;
 import com.brite.utilities.BrowserUtils;
+import com.brite.utilities.ConfigurationReader;
 import com.brite.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -27,15 +28,17 @@ public class US08_GizemStepDefs {
     @Given("I am on the login page")
     public void i_am_on_the_login_page() {
 
-        Driver.getDriver().get("http://qa.briteerp.com/web/login");
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
-    @When("I login using {string} and {string}")
+    @When("I login using with {string} and {string}")
     public void i_login_using_and(String email, String password) {
 
         loginPage.emailInputBox.sendKeys(email);
         loginPage.passWordInputBox.sendKeys(password);
         loginPage.loginButton.click();
     }
+
+
     @Then("account holder name should be {string}")
     public void account_holder_name_should_be(String expectedName) {
 
