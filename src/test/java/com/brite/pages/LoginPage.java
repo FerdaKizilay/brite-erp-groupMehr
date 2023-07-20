@@ -17,15 +17,17 @@ public class LoginPage {
         PageFactory.initElements(Driver.getDriver(), this);
 
     }
+    @FindBy(xpath ="//p[@class='alert alert-danger']" )
+    public WebElement errorMessage;
 
     @FindBy(xpath = "//input[@type='text']")
-    public static WebElement emailInputBox;
+    public WebElement emailInputBox;
 
     @FindBy(xpath = "//input[@type='password']")
-    public static WebElement passWordInputBox;
+    public WebElement passWordInputBox;
 
     @FindBy(xpath = "//button[@type='submit']")
-    public static WebElement loginButton;
+    public WebElement loginButton;
 
     public void login(String email, String password) {
         emailInputBox.sendKeys(email);
