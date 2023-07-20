@@ -90,6 +90,7 @@ public class US03_TatianaStepDefinition {
         WebDriverWait wait=new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(6));
         BrowserUtils.verifyElementDisplayed(calendarPage.daysOfTheWeekInMonth);
 
+
     }
 
     @And("User should be able to see Dates of the month in a table")
