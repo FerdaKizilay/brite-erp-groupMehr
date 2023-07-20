@@ -28,6 +28,9 @@ public class RepairsPage {
     @FindBy(xpath = "//td[.='RMA/00238']")
     public WebElement searchBoxResult;
 
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/table/thead/tr/th[1]/div/input")
+    public WebElement checkBox;
+
 
 
 

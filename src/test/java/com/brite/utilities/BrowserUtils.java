@@ -29,7 +29,7 @@ public class BrowserUtils {
         }
     }
 
-    public static void switchWindowAndVerify(String expectedInURL, String expectedInTitle){
+    public static void switchWindowAndVerify(WebDriver driver, String expectedInURL, String expectedInTitle){
 
         //Return and store all window handles in a Set.
         Set<String> allWindowHandles = Driver.getDriver().getWindowHandles();

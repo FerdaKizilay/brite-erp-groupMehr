@@ -31,4 +31,11 @@ public class US1_Ferda_Page {
     @FindBy(xpath = "//span[@name='name']")
     public WebElement displayName;
 
+    @FindBy(xpath = "//div[@class='oe_kanban_details']")
+    public WebElement customerModule;
+
+    @FindBy(xpath = "//button[@accesskey='a']")
+    public WebElement editButton;
+
+
 }
