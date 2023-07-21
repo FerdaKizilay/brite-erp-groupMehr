@@ -42,6 +42,7 @@ public class US03_TatianaStepDefinition {
 
     }
 
+
     @When("User clicks on calendar module")
     public void user_clicks_on_calendar_module () {
             calendarPage.calendarModule.click();
