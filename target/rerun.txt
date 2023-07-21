@@ -1,1 +1,1 @@
-file:src/test/resources/feature/US09POS_Orders.feature:13
+file:src/test/resources/feature/US04_Tatiana.feature:7
