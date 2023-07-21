@@ -1,4 +1,4 @@
-@US03
+@B28-239
 Feature:Brite erp application functionality
   Agile Story:
   As a user, I want to see the calendar page as daily, weekly (as a default) and monthly.
@@ -6,7 +6,7 @@ Feature:Brite erp application functionality
   Background:For all scenarios user is on the login page of Brite ERP application
     Given user is on the login page of the Brite ERP application
 
-  @US03AC1
+  @B28-235
   Scenario Outline:Verify users see the calendar as a daily
     When User enters "<email>" and "<password>"
     And User clicks on login button
@@ -25,7 +25,7 @@ Feature:Brite erp application functionality
       |imm113@info.com               |inventorymanager  |InventoryManager113 |
       |expensesmanager107@info.com   |expensesmanager   |ExpensesManager107   |
 
-  @US03AC2
+  @B28-237
   Scenario Outline:Verify users see the calendar as a weekly
     When User enters "<email>" and "<password>"
     And User clicks on login button
@@ -44,7 +44,7 @@ Feature:Brite erp application functionality
       |expensesmanager107@info.com   |expensesmanager   |ExpensesManager107   |
 
 
-    @US03AC3
+    @B28-238
   Scenario Outline:Verify users see the calendar as a monthly
     When User enters "<email>" and "<password>"
     And User clicks on login button
