@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/feature",
         glue = "com/brite/step_definition",
         dryRun = false,
-        tags = "@B28-247",
+        tags = "@B28-250",
         publish = true //generating a report with public link
         //, monochrome=true
 
