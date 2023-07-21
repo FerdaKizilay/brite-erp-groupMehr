@@ -33,6 +33,8 @@ public class US03_TatianaStepDefinition {
     public void user_clicks_on_login_button() {
         loginPage.loginButton.click();
     }
+
+
     @Then("User should see {string} on the page")
     public void user_should_see_on_the_page(String expectedName) {
         String actualName = calendarPage.accountName.getText();
