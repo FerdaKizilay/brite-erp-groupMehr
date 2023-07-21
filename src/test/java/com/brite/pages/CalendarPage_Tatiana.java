@@ -74,6 +74,8 @@ import com.brite.utilities.Driver;
         @FindBy(xpath = "(//table)[7]//td[5]//a")
         public WebElement createdEvent;
 
+
+
         @FindBy(xpath = "(//table//td[1]/label[text()='Starting at'])[2] ")
         public WebElement eventDetails;
 
