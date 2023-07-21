@@ -30,3 +30,4 @@ Feature:  Brite ERP login feature
       | salesmanager8@info.com  | salesmanager | SalesManager8  |
       | salesmanager9@info.com  | salesmanager | SalesManager9  |
       | salesmanager10@info.com | salesmanager | SalesManager10 |
+    
