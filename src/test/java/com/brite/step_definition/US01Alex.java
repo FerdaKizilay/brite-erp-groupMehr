@@ -34,11 +34,13 @@ LoginPage loginPage = new LoginPage();
     }
     @Then("message should be displayed")
     public void message_should_be_displayed() {
-      JavascriptExecutor js = (JavascriptExecutor)Driver.getDriver();
 
+
+      JavascriptExecutor js = (JavascriptExecutor)Driver.getDriver();
       WebElement field = Driver.getDriver().findElement(By.name("login"));
       Boolean is_valid = (Boolean)js.executeScript("return arguments[0].checkValidity();", field);
       String actualMessage = (String)js.executeScript("return arguments[0].validationMessage;", field);
+      //  String expectedMessage = "Please fill out this field.";
       String expectedMessage = "Please fill in this field.";
       Assert.assertEquals("Failed!! actual message is different than the expected message",expectedMessage,actualMessage);
     }

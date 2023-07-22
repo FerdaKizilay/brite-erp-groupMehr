@@ -10,13 +10,14 @@ import org.junit.runner.RunWith;
                 "pretty",
                 "html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",
-                "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                "json:target/cucumber.json",
         },
 
         features = "src/test/resources/feature",
         glue = "com/brite/step_definition",
         dryRun = false,
-        tags = "@eventcrmmanager1",
+        tags = "@B28-243",
         publish = true //generating a report with public link
         //, monochrome=true
 
