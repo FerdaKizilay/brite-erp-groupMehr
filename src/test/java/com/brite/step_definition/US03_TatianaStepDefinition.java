@@ -10,6 +10,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class US03_TatianaStepDefinition {
     LoginPage loginPage=new LoginPage();
@@ -30,6 +33,8 @@ public class US03_TatianaStepDefinition {
     public void user_clicks_on_login_button() {
         loginPage.loginButton.click();
     }
+
+
     @Then("User should see {string} on the page")
     public void user_should_see_on_the_page(String expectedName) {
         String actualName = calendarPage.accountName.getText();
@@ -37,9 +42,11 @@ public class US03_TatianaStepDefinition {
 
     }
 
+
     @When("User clicks on calendar module")
     public void user_clicks_on_calendar_module () {
             calendarPage.calendarModule.click();
+            BrowserUtils.waitFor(10);
         }
 
         @Then("User should be able to see Day module")
@@ -49,13 +56,16 @@ public class US03_TatianaStepDefinition {
         @When("User clicks on Day module")
         public void user_clicks_on_day_module () {
             calendarPage.dayButton.click();
+            WebDriverWait wait=new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(10));
         }
         @Then("User should be able to see Day header")
         public void user_should_be_able_to_see_day_header () {
+        //BrowserUtils.sleep(6);
             BrowserUtils.verifyElementDisplayed(calendarPage.dayHeader);
         }
         @Then("User should be able to see time column")
         public void user_should_be_able_to_see_time_column () {
+        //BrowserUtils.sleep(6);
             BrowserUtils.verifyElementDisplayed(calendarPage.timeColumn);
         }
 
@@ -78,16 +88,21 @@ public class US03_TatianaStepDefinition {
     @When("User clicks on Month module")
     public void userClicksOnMonthModule() {
         calendarPage.monthButton.click();
+        WebDriverWait wait=new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(10));
+
     }
 
     @Then("User should be able to see Days of the month")
     public void userShouldBeAbleToSeeDaysOfTheMonth() {
+        //BrowserUtils.sleep(6);
         BrowserUtils.verifyElementDisplayed(calendarPage.daysOfTheWeekInMonth);
+
 
     }
 
     @And("User should be able to see Dates of the month in a table")
     public void userShouldBeAbleToSeeDatesOfTheMonthInATable() {
+        //BrowserUtils.sleep(6);
         BrowserUtils.verifyElementDisplayed(calendarPage.datesOfTheMonthTable);
     }
 }

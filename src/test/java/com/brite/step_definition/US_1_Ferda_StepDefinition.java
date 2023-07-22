@@ -10,6 +10,7 @@ public class US_1_Ferda_StepDefinition {
     US1_Ferda_Page ferdaPage=new US1_Ferda_Page();
 
 
+
     @Then("user clicks sales button")
     public void user_clicks_sales_button() {
         ferdaPage.salesButton.click();

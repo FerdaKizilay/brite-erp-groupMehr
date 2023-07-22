@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>19 Jul 2023, 12:51</td>
+      <td>20 Jul 2023, 07:53</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@B28-206</td>
-          <td      class="passed"    >4</td>
+          <td      class="passed"    >2</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">4</td>
+          <td class="total">3</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="9870372000">9.870</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="3584357100">3.584</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -182,14 +182,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">9.870</span>
+  <span class="lead-duration duration">3.584</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify there are 6 columns to see the quotations on the Sales page when the POS &amp; sales managers login.</span>
+  <span class="name">Verify there are 6 columns to see the quotations on the Sales page when the POS managers login.</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -198,16 +198,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -217,34 +217,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user is on the login page</span>
-
-  <span class="lead-duration duration">9.865</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -252,7 +225,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user enters POS manager credentials and login</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.741</span>
 
 </div>
 
@@ -279,7 +252,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">User is on the sales page</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">2.803</span>
 
 </div>
 
@@ -302,11 +275,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">User should be able to see <span class="argument">6</span> columns of the quotations</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.039</span>
 
 </div>
 
@@ -314,6 +287,24 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: expected:&lt;6&gt; but was:&lt;7&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at com.brite.step_definition.US07_SalesStepDefinitions.userShouldBeAbleToSeeColumnsOfTheQuotations(US07_SalesStepDefinitions.java:53)
+	at &#10045;.User should be able to see 6 columns of the quotations(file:///C:/Users/woldu/IdeaProjects/brite-erp-groupMehr/src/test/resources/feature/US07SalesPage.feature:27)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -333,7 +324,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -345,13 +336,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-3" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.brite.step_definition.Hooks.tearDownMethod(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.612</span>
+  <span class="lead-duration duration">0.354</span>
 
           </div>
 
@@ -360,6 +351,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
+      <a>Verify there are 6 columns to see the quotations on the Sales page when the POS managers login.</a>
+      <a href="embeddings/embedding_-1067919441.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-5" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1067919441.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>

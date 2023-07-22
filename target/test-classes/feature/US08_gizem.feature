@@ -8,7 +8,7 @@ Feature:  Brite ERP login feature
   Scenario Outline: As a POS & sales manager, I want to access the Repairs page.
 
     Given I am on the login page
-    When I login using "<email>" and "<password>"
+    When I login using with "<email>" and "<password>"
     Then account holder name should be "<name>"
     Then POS & sales, I want to access the Repairs page.
     Then Verify there are six columns to see the repair orders on the Repairs page when the POS & sales managers login.
