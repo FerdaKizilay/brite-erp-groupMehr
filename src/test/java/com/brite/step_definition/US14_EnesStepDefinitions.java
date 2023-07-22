@@ -15,6 +15,7 @@ public class US14_EnesStepDefinitions {
 
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {
+
         Driver.getDriver().get("http://qa.briteerp.com/web/login");
     }
 
