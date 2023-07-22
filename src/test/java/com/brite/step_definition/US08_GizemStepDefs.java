@@ -42,7 +42,9 @@ public class US08_GizemStepDefs {
     @Then("account holder name should be {string}")
     public void account_holder_name_should_be(String expectedName) {
 
-        repairsPage.nameText.getText();
+        String actualName = repairsPage.nameText.getText();
+
+        Assert.assertEquals(actualName,expectedName);
 
 
     }
