@@ -1,5 +1,7 @@
 @B28-247
 Feature: create events on my calendar from "Calendar" module
+         Agile story: US04 As a Posmanager, I should be able to create events
+          on my calendar from "Calendar" module
   Background: For all the scenarios user should be logged in on Brite ERP application
     Given User is logged in
 
